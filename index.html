@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,600&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">    <title>Coffee Site</title>
+</head>
+<body>
+
+        <!--NAV-->
+    <nav class="nav">
+        <ion-icon class="burger-btn" name="grid-outline"></ion-icon>
+        <h2 class="logo">The Coffee Cozy</h2>
+        <div class="nav-menus">
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">Our Story</a>
+            <!--<a href="#">Testimonial</a>-->
+        </div>
+        <div class="nav-right">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-icon name="cart-outline"></ion-icon>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+        <div class="header-top">
+            <div class="top-left">
+                <h1><span>Perfect</span> Time for <br> Perfect <span>Coffee</span> </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Quam viverra orci sagittis eu. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nam libero justo laoreet sit amet cursus.</p>
+                <button class="header-btn">See the Menu</button>
+            </div>
+            <div class="top-right">
+                <img class="roast" src="imgs/header.jpg" alt="Roasting Coffee">
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-detail">
+                <h2>30+</h2>
+                <p>All of menus</p>
+            </div>
+            <div class="header-detail">
+                <h2>3,800+</h2>
+                <p>Daily Orders</p>
+            </div>
+            <div class="header-detail">
+                <h2>12+</h2>
+                <p>Branch Stores</p>
+            </div>
+        </div>
+    </header>
+
+    <!--PRODUCT/MENU-->
+    <section class="product" id="menu">
+        <h2 class="title">The Best Products We Have</h2>
+        <div class="product-filter">
+            <button class="btn-filter"  data-filter="*">All</button>
+            <button class="btn-filter" data-filter=".coffee">Coffee</button>
+            <button class="btn-filter" data-filter=".non-coffee">Non Coffee</button>
+            <button class="btn-filter" data-filter=".cakes">Cakes</button>
+        </div>
+        <div class="product-list" data-ref="product-list">
+            <div class="product-card coffee" data-order="1">
+                <div class="product-img">
+                    <img src="imgs/frappe.jpg" alt="Frappe">
+                </div>
+                <div class="product-detail">
+                    <h4>Frappe</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                    <div class="product-price">
+                        <p>$ 13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card non-coffee" data-order="2">
+                <div class="product-img">
+                    <img src="imgs/mint-tea.jpg" alt="Fresh Mint Tea">
+                </div>
+                <div class="product-detail">
+                    <h4>Fresh Mint Tea</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                    <div class="product-price">
+                        <p>$ 11.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card coffee" data-order="3">
+                <div class="product-img">
+                    <img src="imgs/latte.jpg" alt="Latte">
+                </div>
+                <div class="product-detail">
+                    <h4>Latte</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                    <div class="product-price">
+                        <p>$ 12.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card non-coffee" data-order="4">
+                <div class="product-img">
+                    <img src="imgs/lemonade.jpg" alt="Lemonade">
+                </div>
+                <div class="product-detail">
+                    <h4>Lemonade</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                    <div class="product-price">
+                        <p>$ 10.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card coffee" data-order="5">
+                <div class="product-img">
+                    <img src="imgs/cappuccino.jpg" alt="Cappuccino">
+                </div>
+                <div class="product-detail">
+                    <h4>Cappuccino</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                    <div class="product-price">
+                        <p>$ 10.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card cakes" data-order="6">
+                <div class="product-img">
+                    <img src="imgs/cupcake.jpg" alt="Strawberry Cupcake">
+                </div>
+                <div class="product-detail">
+                    <h4>Strawberry Cupcake</h4>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                    <div class="product-price">
+                        <p>$ 10.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--STORY/ABOUT-->
+    <section class="story" id="story">
+        <div class="story-left">
+            <div class="story-column">
+                <img src="imgs/story1.jpg" alt="3 Espresso Cups">
+                <img src="imgs/story2.jpg" alt="4 Latte Cups">
+            </div>
+            <div class="story-column">
+                <img src="imgs/story3.jpg" alt="Coffee on cutting boards">
+                <img src="imgs/story4.jpg" alt="Espresso Machine">
+            </div>
+            <div class="story-column">
+                <img src="imgs/story1.jpg" alt="3 Espresso Cups">
+                <img src="imgs/story2.jpg" alt="4 Latte Cups">
+            </div>
+        </div>
+        <div class="story-right">
+            <h2 class="title">Out story for the best <br>coffee in Town</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Quam viverra orci sagittis eu. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nam libero justo laoreet sit amet cursus.</p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="footer-wrapper">
+        <h2 class="title">Let's drink your <br> coffee with us!</h2>
+        <div class="footer-desc">
+            <p>Do you want to explore more about us?</p>
+            <button class="footer-btn btn-type1">Contact Us</button>
+            <button class="footer-btn btn-type2">Our Products</button>
+        </div>
+        <hr class="divider">
+        <div class="footer-bottom">
+            <div class="footer-logo">The Coffee Cozy</div>
+            <div class="social-media">
+                <a href="#" class="media-icon"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#" class="media-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" class="media-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#" class="media-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="copyright">Copyright 2024 TCC</div>
+        </div>
+        
+    </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app.js"></script>
+<!--icons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--filter library for product-->
+<script src="https:/cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+</html>
